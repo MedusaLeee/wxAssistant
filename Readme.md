@@ -9,7 +9,7 @@
 3. 进入虚拟环境`workon wxAssistant`;
 4. 安装依赖`pip3 install -r requirements.txt`
 
-## Demo
+# Demo
 
 见文件列表
 
