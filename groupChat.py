@@ -17,7 +17,7 @@ def download_files(msg):
 @itchat.msg_register(FRIENDS)
 def add_friend(msg):
     msg.user.verify()
-    msg.user.send('Hi, 你好，我叫你不知道的我都知道!')
+    msg.user.send('Hi，你好，我叫你不知道的我都知道！')
 
 
 @itchat.msg_register([TEXT, MAP, CARD, NOTE, SHARING], isGroupChat=True)
