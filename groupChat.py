@@ -10,8 +10,8 @@ def text_reply(msg):
 @itchat.msg_register([PICTURE, RECORDING, ATTACHMENT, VIDEO], isGroupChat=True)
 def download_files(msg):
     msg.download('./resources/' + msg.fileName)
-    printStr = '收到群(%s)附件消息，附件已下载，发送人为：%s，文件类型：%s，文件名：%s' % (msg.user.nickName, msg.actualNickName, msg.type, msg.fileName)
-    msg.user.send(printStr)
+    replyStr = '收到群(%s)附件消息，附件已下载，发送人为：%s，文件类型：%s，文件名：%s' % (msg.user.nickName, msg.actualNickName, msg.type, msg.fileName)
+    msg.user.send(replyStr)
 
 
 @itchat.msg_register(FRIENDS)
